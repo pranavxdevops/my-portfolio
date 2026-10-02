@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav | Cloud & DevOps Engineer</title>
+    <meta name="description" content="Portfolio of Pranav, a Cloud & DevOps Engineer specializing in AWS, Azure, Kubernetes, CI/CD, and Infrastructure as Code.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Pranav | Cloud & DevOps Engineer">
+    <meta property="og:description" content="Portfolio of Pranav, specializing in AWS, CI/CD, Kubernetes, and IaC.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicons for tech stack -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-icon"><i class="fas fa-terminal"></i></span>
+                <span class="logo-text">Pranav<span class="accent-text">.dev</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#pipeline" class="nav-link">Pipeline</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">Let's Connect</a>
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#pipeline" class="mobile-link">Pipeline</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#certifications" class="mobile-link">Certifications</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content reveal">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span> Available for new opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm Pranav <br>
+                        <span class="gradient-text">Cloud & DevOps</span><br>
+                        Engineer
+                    </h1>
+                    <p class="hero-desc">
+                        I architect scalable cloud infrastructure and automate CI/CD pipelines to deliver reliable, high-performance applications on AWS and Azure. Specializing in Kubernetes, GitOps, and Infrastructure as Code.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <p>Connect with me:</p>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/pranav-ravichandaran/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal delay-1">
+                    <div class="infra-diagram">
+                        <!-- Code / Developer Node -->
+                        <div class="node dev-node">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="flow-line line-1"><div class="packet"></div></div>
+                        <!-- Git Node -->
+                        <div class="node git-node">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="flow-line line-2"><div class="packet"></div></div>
+                        <!-- CI/CD Node -->
+                        <div class="node cicd-node">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="flow-line line-3"><div class="packet"></div></div>
+                        <div class="flow-line line-4"><div class="packet"></div></div>
+                        <!-- Container Node -->
+                        <div class="node docker-node">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <!-- K8s Node -->
+                        <div class="node k8s-node">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="k8s" class="svg-icon">
+                        </div>
+                        <!-- Cloud Nodes -->
+                        <div class="cloud-wrapper">
+                            <i class="fas fa-cloud cloud-bg"></i>
+                            <div class="node aws-node">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Professional Profile</h2>
+                    <p class="section-subtitle">Bridging the gap between development and operations.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>I am a dedicated <strong>Cloud DevOps Engineer</strong> with a strong foundation in designing, deploying, and maintaining highly available cloud environments. My focus is on eliminating manual operational toil through automation, robust CI/CD practices, and Infrastructure as Code.</p>
+                        <p>I thrive in complex, fast-paced environments where I can leverage tools like Kubernetes, Terraform, and Argo CD to build resilient, secure, and scalable architectures that empower engineering teams to ship faster and safer.</p>
+                    </div>
+                    
+                    <div class="about-stats reveal delay-1">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                            <div class="stat-info">
+                                <h3 class="stat-value">2.7+ Years</h3>
+                                <p class="stat-label">Cloud Experience</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-cloud"></i></div>
+                            <div class="stat-info">
+                                <h3 class="stat-value">AWS & Azure</h3>
+                                <p class="stat-label">Cloud Platforms</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-infinity"></i></div>
+                            <div class="stat-info">
+                                <h3 class="stat-value">CI/CD & GitOps</h3>
+                                <p class="stat-label">Automation Focus</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="stat-info">
+                                <h3 class="stat-value">BCA</h3>
+                                <p class="stat-label">Computer Applications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Technology Ecosystem</h2>
+                    <p class="section-subtitle">Tools and platforms I utilize to build robust infrastructure.</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Cloud -->
+                    <div class="skill-category glass-card reveal">
+                        <div class="category-header">
+                            <i class="fas fa-cloud category-icon text-cyan"></i>
+                            <h3>Cloud Platforms</h3>
+                        </div>
+                        <div class="tech-tags">
+                            <div class="tech-item"><i class="devicon-amazonwebservices-original"></i> AWS</div>
+                            <div class="tech-item"><i class="devicon-azure-plain"></i> Azure</div>
+                            <div class="tech-item"><i class="fab fa-microsoft"></i> Microsoft 365</div>
+                            <div class="tech-item"><i class="fas fa-shield-alt"></i> Entra ID</div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps -->
+                    <div class="skill-category glass-card reveal delay-1">
+                        <div class="category-header">
+                            <i class="fas fa-infinity category-icon text-blue"></i>
+                            <h3>DevOps & CI/CD</h3>
+                        </div>
+                        <div class="tech-tags">
+                            <div class="tech-item"><i class="devicon-docker-plain"></i> Docker</div>
+                            <div class="tech-item"><i class="devicon-kubernetes-plain"></i> Kubernetes</div>
+                            <div class="tech-item"><i class="devicon-jenkins-line"></i> Jenkins</div>
+                            <div class="tech-item"><i class="devicon-gitlab-plain"></i> GitLab CI</div>
+                            <div class="tech-item"><i class="fas fa-ship"></i> Argo CD</div>
+                            <div class="tech-item"><i class="fas fa-chart-line"></i> SonarQube</div>
+                        </div>
+                    </div>
+
+                    <!-- IaC -->
+                    <div class="skill-category glass-card reveal">
+                        <div class="category-header">
+                            <i class="fas fa-code category-icon text-indigo"></i>
+                            <h3>Infrastructure as Code</h3>
+                        </div>
+                        <div class="tech-tags">
+                            <div class="tech-item"><i class="devicon-terraform-plain"></i> Terraform</div>
+                            <div class="tech-item"><i class="devicon-ansible-plain"></i> Ansible</div>
+                            <div class="tech-item"><i class="fas fa-cloud-upload-alt"></i> CloudFormation</div>
+                            <div class="tech-item"><i class="fas fa-dharmachakra"></i> Helm</div>
+                        </div>
+                    </div>
+
+                    <!-- Monitoring & Systems -->
+                    <div class="skill-category glass-card reveal delay-1">
+                        <div class="category-header">
+                            <i class="fas fa-server category-icon text-emerald"></i>
+                            <h3>Monitoring & Systems</h3>
+                        </div>
+                        <div class="tech-tags">
+                            <div class="tech-item"><i class="devicon-prometheus-original"></i> Prometheus</div>
+                            <div class="tech-item"><i class="devicon-grafana-original"></i> Grafana</div>
+                            <div class="tech-item"><i class="devicon-linux-plain"></i> Linux</div>
+                            <div class="tech-item"><i class="devicon-bash-plain"></i> Bash</div>
+                            <div class="tech-item"><i class="devicon-python-plain"></i> Python</div>
+                            <div class="tech-item"><i class="devicon-windows8-original"></i> Windows Server</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pipeline Section -->
+        <section id="pipeline" class="section bg-darker">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">How I Build & Deploy</h2>
+                    <p class="section-subtitle">A standardized DevOps lifecycle from code commit to production monitoring.</p>
+                </div>
+
+                <div class="pipeline-container reveal">
+                    <div class="pipeline-track"></div>
+                    
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fas fa-code"></i></div>
+                        <div class="stage-content">
+                            <h4>Developer</h4>
+                            <p>Code Commit</p>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fab fa-git-alt"></i></div>
+                        <div class="stage-content">
+                            <h4>Git</h4>
+                            <p>Version Control</p>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fas fa-sync"></i></div>
+                        <div class="stage-content">
+                            <h4>CI / CD</h4>
+                            <p>Test & Build</p>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fab fa-docker"></i></div>
+                        <div class="stage-content">
+                            <h4>Docker</h4>
+                            <p>Containerization</p>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fas fa-server"></i></div>
+                        <div class="stage-content">
+                            <h4>Registry</h4>
+                            <p>Artifact Storage</p>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-stage">
+                        <div class="stage-icon k8s-icon-wrap"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="k8s"></div>
+                        <div class="stage-content">
+                            <h4>Kubernetes</h4>
+                            <p>Orchestration</p>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="stage-content">
+                            <h4>Ingress</h4>
+                            <p>Routing</p>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-stage">
+                        <div class="stage-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="stage-content">
+                            <h4>Monitoring</h4>
+                            <p>Prometheus + Grafana</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <p class="section-subtitle">My career journey and impact.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot glow"></div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="role">Cloud Engineer</h3>
+                                    <h4 class="company"><i class="far fa-building"></i> Febno Technologies</h4>
+                                </div>
+                                <div class="timeline-meta">
+                                    <span class="date"><i class="far fa-calendar-alt"></i> Aug 2023 - Present</span>
+                                    <span class="location"><i class="fas fa-map-marker-alt"></i> Calicut, IN</span>
+                                </div>
+                            </div>
+                            <ul class="role-details">
+                                <li><strong>Cloud Infrastructure:</strong> Managed AWS environments including EC2, IAM, S3, VPC, Route53, and CloudWatch for production workloads.</li>
+                                <li><strong>Security & Compliance:</strong> Configured strict IAM roles, policies, and least-privilege access controls across the AWS ecosystem.</li>
+                                <li><strong>CI/CD Pipelines:</strong> Designed and maintained automated deployment workflows using GitLab CI/CD, Jenkins, and Argo CD, reducing deployment time by 40%.</li>
+                                <li><strong>GitOps Workflows:</strong> Implemented Argo CD for Kubernetes cluster synchronization, ensuring consistent and automated state-driven releases.</li>
+                                <li><strong>Serverless Automation:</strong> Scripted AWS Lambda functions to automate routine cloud operations, improving resource utilization efficiency by 30%.</li>
+                                <li><strong>L2 Support:</strong> Led incident response, root cause analysis, and remediation for CI/CD failures, infrastructure outages, and production applications.</li>
+                            </ul>
+                            <div class="role-tech">
+                                <span>AWS</span>
+                                <span>Kubernetes</span>
+                                <span>Jenkins</span>
+                                <span>GitLab CI</span>
+                                <span>Argo CD</span>
+                                <span>Lambda</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section bg-darker">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Engineering Projects</h2>
+                    <p class="section-subtitle">Showcasing complex implementations and automation architectures.</p>
+                </div>
+
+                <div class="projects-grid-large">
+                    <!-- Project 1 -->
+                    <div class="project-card-large glass-card reveal">
+                        <div class="project-content">
+                            <h3 class="project-title">AWS Infrastructure Automation & Provisioning</h3>
+                            <p class="project-desc">
+                                Engineered a scalable, repeatable AWS cloud infrastructure using Terraform. Implemented strict Infrastructure as Code (IaC) best practices to automate the provisioning of isolated networking and compute environments.
+                            </p>
+                            
+                            <div class="project-architecture">
+                                <h4>Architecture Flow</h4>
+                                <div class="arch-diagram">
+                                    <span class="arch-node">Terraform</span>
+                                    <i class="fas fa-arrow-right arch-arrow"></i>
+                                    <span class="arch-node">VPC & Subnets</span>
+                                    <i class="fas fa-arrow-right arch-arrow"></i>
+                                    <span class="arch-node">EC2 & ASG</span>
+                                    <i class="fas fa-arrow-right arch-arrow"></i>
+                                    <span class="arch-node">Route53</span>
+                                </div>
+                            </div>
+                            
+                            <ul class="project-features">
+                                <li><i class="fas fa-check-circle"></i> Automated VPCs, subnets, and routing tables.</li>
+                                <li><i class="fas fa-check-circle"></i> Programmatic Security Group and IAM role definitions.</li>
+                                <li><i class="fas fa-check-circle"></i> State management and modular Terraform design.</li>
+                            </ul>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-pill"><i class="devicon-terraform-plain"></i> Terraform</span>
+                                <span class="tech-pill"><i class="devicon-amazonwebservices-original"></i> AWS</span>
+                                <span class="tech-pill">VPC</span>
+                                <span class="tech-pill">IAM</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card-large glass-card reveal delay-1">
+                        <div class="project-content">
+                            <h3 class="project-title">CI/CD Automation with GitOps & K8s</h3>
+                            <p class="project-desc">
+                                Built an end-to-end continuous integration and deployment pipeline integrating multiple DevOps tools. Shifted to a GitOps model utilizing Argo CD to maintain single source of truth for Kubernetes deployments.
+                            </p>
+                            
+                            <div class="project-architecture">
+                                <h4>Pipeline Flow</h4>
+                                <div class="arch-diagram">
+                                    <span class="arch-node">Git</span>
+                                    <i class="fas fa-arrow-right arch-arrow"></i>
+                                    <span class="arch-node">Jenkins</span>
+                                    <i class="fas fa-arrow-right arch-arrow"></i>
+                                    <span class="arch-node">Docker</span>
+                                    <i class="fas fa-arrow-right arch-arrow"></i>
+                                    <span class="arch-node">Argo CD</span>
+                                    <i class="fas fa-arrow-right arch-arrow"></i>
+                                    <span class="arch-node">K8s</span>
+                                </div>
+                            </div>
+                            
+                            <ul class="project-features">
+                                <li><i class="fas fa-check-circle"></i> Integrated SonarQube for automated code quality gates.</li>
+                                <li><i class="fas fa-check-circle"></i> Containerized applications and managed image registries.</li>
+                                <li><i class="fas fa-check-circle"></i> State reconciliation and automated rollouts with Argo CD.</li>
+                            </ul>
+                            
+                            <div class="project-tech-stack">
+                                <span class="tech-pill"><i class="devicon-jenkins-line"></i> Jenkins</span>
+                                <span class="tech-pill"><i class="devicon-docker-plain"></i> Docker</span>
+                                <span class="tech-pill"><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
+                                <span class="tech-pill">Argo CD</span>
+                                <span class="tech-pill">SonarQube</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="section-container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Certifications</h2>
+                    <p class="section-subtitle">Validated expertise and continuous learning.</p>
+                </div>
+
+                <div class="cert-grid reveal">
+                    <div class="cert-card glass-card hover-lift">
+                        <div class="cert-icon-wrapper ms-blue">
+                            <i class="fab fa-windows"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h3 class="cert-title">Azure Database Administrator Associate</h3>
+                            <p class="cert-org">Microsoft Certified</p>
+                            <span class="cert-badge">DP-300</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-card hover-lift delay-1">
+                        <div class="cert-icon-wrapper ms-green">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h3 class="cert-title">Introduction to Programming Using Python</h3>
+                            <p class="cert-org">Microsoft Technology Associate</p>
+                            <span class="cert-badge">98-381</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-darker">
+            <div class="section-container">
+                <div class="contact-wrapper glass-card reveal">
+                    <div class="contact-info">
+                        <h2 class="section-title">Let's Build Something Reliable.</h2>
+                        <p class="contact-desc">Whether you need help architecting cloud solutions, automating deployments, or streamlining your DevOps processes, I'm here to help.</p>
+                        
+                        <div class="contact-methods">
+                            <a href="mailto:pranavp.cloud@gmail.com" class="contact-method-item">
+                                <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <span>pranavp.cloud@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="tel:+918618320364" class="contact-method-item">
+                                <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <span>+91 8618320364</span>
+                                </div>
+                            </a>
+                            <div class="contact-method-item">
+                                <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <span>Kerala, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="How can I help you?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">
+                                <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                            </button>
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <span class="logo-icon"><i class="fas fa-terminal"></i></span>
+                    <span class="logo-text">Pranav<span class="accent-text">.dev</span></span>
+                </a>
+                <p>Cloud & DevOps Engineer</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pranav-ravichandaran/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:pranavp.cloud@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pranav P. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
