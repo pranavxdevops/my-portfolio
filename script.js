@@ -96,28 +96,50 @@ const updateActiveLink = () => {
 window.addEventListener('scroll', updateActiveLink);
 window.addEventListener('load', updateActiveLink);
 
-// 5. Contact Form Handling (Simulation)
+// 5. Contact Form Handling (Web3Forms API)
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
+        
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
         
         // Basic validation
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
+        const accessKey = contactForm.querySelector('input[name="access_key"]').value;
 
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalBtnText = submitBtn.innerHTML;
+        if (accessKey === 'YOUR_ACCESS_KEY_HERE') {
+            formStatus.innerHTML = '<span class="status-error"><i class="fas fa-exclamation-circle"></i> Please replace YOUR_ACCESS_KEY_HERE in index.html with your actual Web3Forms access key.</span>';
+            return;
+        }
         
         if (name && email && message) {
             // Loading state
             submitBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Sending...';
             submitBtn.disabled = true;
+            formStatus.innerHTML = '';
 
-            // Simulate API Call
-            setTimeout(() => {
-                formStatus.innerHTML = '<span class="status-success"><i class="fas fa-check-circle"></i> Message sent successfully! I will get back to you soon.</span>';
-                contactForm.reset();
+            try {
+                const formData = new FormData(contactForm);
+                
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+
+                if (data.success) {
+                    formStatus.innerHTML = '<span class="status-success"><i class="fas fa-check-circle"></i> Message sent successfully! I will get back to you soon.</span>';
+                    contactForm.reset();
+                } else {
+                    formStatus.innerHTML = `<span class="status-error"><i class="fas fa-exclamation-circle"></i> Something went wrong: ${data.message}</span>`;
+                }
+            } catch (error) {
+                formStatus.innerHTML = '<span class="status-error"><i class="fas fa-exclamation-circle"></i> Network error. Please try again later.</span>';
+            } finally {
                 submitBtn.innerHTML = originalBtnText;
                 submitBtn.disabled = false;
                 
@@ -125,7 +147,7 @@ if (contactForm) {
                 setTimeout(() => {
                     formStatus.innerHTML = '';
                 }, 5000);
-            }, 1500);
+            }
         } else {
             formStatus.innerHTML = '<span class="status-error"><i class="fas fa-exclamation-circle"></i> Please fill in all fields.</span>';
         }
